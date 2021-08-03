@@ -40,13 +40,13 @@
   <!-- Navbar (sit on top) -->
   <div class="w3-top">
     <div class="w3-bar w3-white w3-card" id="myNavbar">
-      <a href="/" class="w3-bar-item w3-button w3-wide">Ajay Tutoring</a>
+      <a href="index.html" class="w3-bar-item w3-button w3-wide">Ajay Tutoring</a>
       <!-- Right-sided navbar links -->
       <div class="w3-right w3-hide-small">
-        <a href="/" class="w3-bar-item w3-button"><i class="fa fa-home"></i> HOME</a>
+        <a href="index.html" class="w3-bar-item w3-button"><i class="fa fa-home"></i> HOME</a>
         <a href="about.html" class="w3-bar-item w3-button"><i class="fa fa-address-card"></i> ABOUT</a>
         <a href="subjects.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i> SUBJECTS</a>
-        <a href="schedule.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i> SCHEDULE</a>
+        <a href="/" class="w3-bar-item w3-button"><i class="fa fa-th"></i> SCHEDULE</a>
         <a href="contact.html" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
       </div>
       <!-- Hide right-floated links on small screens and replace them with a menu icon -->
@@ -57,6 +57,17 @@
       </a>
     </div>
   </div>
+
+  <!-- Sidebar on small screens when clicking the menu icon -->
+  <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large"
+    style="display:none" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a>
+    <a href="about.html" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+    <a href="subjects.html" onclick="w3_close()" class="w3-bar-item w3-button">SUBJECTS</a>
+    <a href="/" onclick="w3_close()" class="w3-bar-item w3-button">SCHEDULE</a>
+    <a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+  </nav>
 
   <div class="scheduling">
     <img class="picktime-pic" src="https://image4.owler.com/logo/picktime_owler_20200401_044437_original.jpg">
