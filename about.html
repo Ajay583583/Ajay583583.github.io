@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<title>Ajay Tutoring</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Raleway", sans-serif
+    }
+  
+    body,
+    html {
+      height: 100%;
+      line-height: 1.8;
+    }
+  
+    /* Full height image header */
+    .bgimg-1 {
+      background-position: center;
+      background-size: cover;
+      background-image: url("https://cdn.thecollegeinvestor.com/wp-content/uploads/2018/09/WP_onlinetutor.jpg");
+      min-height: 100%;
+    }
+  
+    .w3-bar .w3-button {
+      padding: 16px;
+    }
+  </style>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+    <div class="w3-bar w3-white w3-card" id="myNavbar">
+      <a href="/" class="w3-bar-item w3-button w3-wide">Ajay Tutoring</a>
+      <!-- Right-sided navbar links -->
+      <div class="w3-right w3-hide-small">
+        <a href="index.html" class="w3-bar-item w3-button"><i class="fa fa-home"></i> HOME</a>
+        <a href="/" class="w3-bar-item w3-button"><i class="fa fa-address-card"></i> ABOUT</a>
+        <a href="subjects.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i> SUBJECTS</a>
+        <a href="schedule.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i> SCHEDULE</a>
+        <a href="contact.html" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+      </div>
+      <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
+        onclick="w3_open()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </div>
+
+  <!-- Sidebar on small screens when clicking the menu icon -->
+  <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large"
+    style="display:none" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a>
+    <a href="/" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+    <a href="subjects.html" onclick="w3_close()" class="w3-bar-item w3-button">SUBJECTS</a>
+    <a href="schedule.html" onclick="w3_close()" class="w3-bar-item w3-button">SCHEDULE</a>
+    <a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+  </nav>
+
+  <img class="about-img" src="pfp.jpg">
+  <div class="about-description">
+  <h6>Hi! I'm Ajay Muthukkumar. I graduated from University of North Carolina at Greensboro with a 4.0 GPA. I received my Bachelor of Science in Biology with Pre-Med Concentration, as well as minors in Chemistry and Spanish. I have been tutoring students in SAT, Chemistry, Biology and Organic Chemistry for 4 years working with High School and College aged students. I've worked with students at all levels of understanding and have experience catering to unique learning styles. I'm passionate about the subjects that I teach and I find that this helps me be more excited and patient while working with students.<br>If you need any further information, please don't hesitate to reach out!</h6>
+
+</div>
+
+<script>
+  // Toggle between showing and hiding the sidebar when clicking the menu icon
+  var mySidebar = document.getElementById("mySidebar");
+
+  function w3_open() {
+    if (mySidebar.style.display === 'block') {
+      mySidebar.style.display = 'none';
+    } else {
+      mySidebar.style.display = 'block';
+    }
+  }
+
+  // Close the sidebar with the close button
+  function w3_close() {
+    mySidebar.style.display = "none";
+  }
+</script>
+</body>
+
+</html>
